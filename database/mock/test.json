@@ -1,0 +1,98 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "name",
+               "required": true,
+               "remark": "姓名",
+               "nameVerify": "name_1439438940000",
+               "ruleVerify": "rule_1439438940000"
+          },
+          {
+               "name": "code",
+               "required": true,
+               "remark": "编码",
+               "nameVerify": "name_1439439408000",
+               "ruleVerify": "rule_1439439408000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "mock",
+               "name": "status|1",
+               "rule": "[0,1]",
+               "array": [],
+               "nameVerify": "name_1439438950000",
+               "ruleVerify": "rule_1439438950000"
+          },
+          {
+               "id": "02",
+               "kind": "object",
+               "name": "data",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439438965000",
+               "ruleVerify": "rule_1439438965000"
+          },
+          {
+               "id": "0201",
+               "kind": "array(object)",
+               "name": "list|10",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439438994000",
+               "ruleVerify": "rule_1439438994000"
+          },
+          {
+               "id": "020101",
+               "kind": "mock",
+               "name": "id|+1",
+               "rule": "1",
+               "array": [
+                    "0201"
+               ],
+               "nameVerify": "name_1439439001000",
+               "ruleVerify": "rule_1439439001000"
+          },
+          {
+               "id": "020102",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "0201"
+               ],
+               "nameVerify": "name_1439439018000",
+               "ruleVerify": "rule_1439439018000"
+          },
+          {
+               "id": "020103",
+               "kind": "mock",
+               "name": "sex|1",
+               "rule": "['男','女']",
+               "array": [
+                    "0201"
+               ],
+               "nameVerify": "name_1439439018000",
+               "ruleVerify": "rule_1439439018000"
+          },
+          {
+               "id": "03",
+               "kind": "mock",
+               "name": "total_count",
+               "rule": "100",
+               "array": [],
+               "nameVerify": "name_1439439085000",
+               "ruleVerify": "rule_1439439085000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/mock/test.json",
+     "interfaceName": "测试接口,真的很爽",
+     "lazyLoad": "yes",
+     "responseParametersType": false,
+     "responseJson": "",
+     "methodError": "请求类型异常请确认"
+}
