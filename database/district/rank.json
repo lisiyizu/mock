@@ -85,9 +85,17 @@
                "ruleVerify": "rule_1439970834000"
           }
      ],
-     "reqError": [],
-     "docError": [],
+     "reqError": [
+          "请求参数［rank_way］应该为必填项",
+          "请求参数［time_type］应该为必填项",
+          "请求参数［kind］应该为必填项"
+     ],
+     "docError": [
+          "接口文档缺少［{\"token\":\"c3035c6ff38b5b6dce3e02a6317a0649\"}］做为请求参数",
+          "接口文档缺少［r］做为请求参数"
+     ],
      "interfaceUrl": "/district/rank.json",
      "interfaceName": "/district/rank.json",
-     "lazyLoad": "no"
+     "lazyLoad": "no",
+     "methodError": "请求类型异常请确认"
 }

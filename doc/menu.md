@@ -3,3 +3,4 @@
 | -------- | -------- |-------- | 
 |1. |[/district/rank.json](../doc/district/rank.md)|/district/rank.json|
 |2. |[/district/rank/selections.json](../doc/district/rank/selections.md)|/district/rank/selections.json|
+|3. |[/groups/statistics/selections.json](../doc/groups/statistics/selections.md)|/groups/statistics/selections.json|

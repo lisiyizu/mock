@@ -1,0 +1,154 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "status",
+               "rule": "0",
+               "array": [],
+               "nameVerify": "name_1439972297000",
+               "ruleVerify": "rule_1439972297000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "success",
+               "array": [],
+               "nameVerify": "name_1439972297000",
+               "ruleVerify": "rule_1439972297000"
+          },
+          {
+               "id": "03",
+               "kind": "object",
+               "name": "list",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439972298000",
+               "ruleVerify": "rule_1439972298000"
+          },
+          {
+               "id": "0301",
+               "kind": "object",
+               "name": "city",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439972322000",
+               "ruleVerify": "rule_1439972322000"
+          },
+          {
+               "id": "0302",
+               "kind": "object",
+               "name": "time_type",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439972326000",
+               "ruleVerify": "rule_1439972326000"
+          },
+          {
+               "id": "030101",
+               "kind": "string",
+               "name": "name",
+               "rule": "城市",
+               "array": [],
+               "nameVerify": "name_1439972646000",
+               "ruleVerify": "rule_1439972646000"
+          },
+          {
+               "id": "030102",
+               "kind": "string",
+               "name": "param",
+               "rule": "@word",
+               "array": [],
+               "nameVerify": "name_1439972647000",
+               "ruleVerify": "rule_1439972647000"
+          },
+          {
+               "id": "030201",
+               "kind": "string",
+               "name": "name",
+               "rule": "时间",
+               "array": [],
+               "nameVerify": "name_1439972649000",
+               "ruleVerify": "rule_1439972649000"
+          },
+          {
+               "id": "030202",
+               "kind": "string",
+               "name": "param",
+               "rule": "@word",
+               "array": [],
+               "nameVerify": "name_1439972650000",
+               "ruleVerify": "rule_1439972650000"
+          },
+          {
+               "id": "030103",
+               "kind": "array(object)",
+               "name": "list",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439972670000",
+               "ruleVerify": "rule_1439972670000"
+          },
+          {
+               "id": "03010301",
+               "kind": "mock",
+               "name": "name|1",
+               "rule": "['上海','天津','北京']",
+               "array": [
+                    "030103"
+               ],
+               "nameVerify": "name_1439972676000",
+               "ruleVerify": "rule_1439972676000"
+          },
+          {
+               "id": "03010302",
+               "kind": "mock",
+               "name": "value|+1",
+               "rule": "1",
+               "array": [
+                    "030103"
+               ],
+               "nameVerify": "name_1439972676000",
+               "ruleVerify": "rule_1439972676000"
+          },
+          {
+               "id": "030203",
+               "kind": "array(object)",
+               "name": "list|4",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439972683000",
+               "ruleVerify": "rule_1439972683000"
+          },
+          {
+               "id": "03020301",
+               "kind": "mock",
+               "name": "name|+1",
+               "rule": "['今日','本周','本月','自定义']",
+               "array": [
+                    "030203"
+               ],
+               "nameVerify": "name_1439972716000",
+               "ruleVerify": "rule_1439972716000"
+          },
+          {
+               "id": "03020302",
+               "kind": "mock",
+               "name": "value|+1",
+               "rule": "1",
+               "array": [
+                    "030203"
+               ],
+               "nameVerify": "name_1439972717000",
+               "ruleVerify": "rule_1439972717000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/groups/statistics/selections.json",
+     "interfaceName": "/groups/statistics/selections.json",
+     "lazyLoad": "no"
+}
