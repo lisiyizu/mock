@@ -147,8 +147,12 @@
           }
      ],
      "reqError": [],
-     "docError": [],
+     "docError": [
+          "接口文档缺少［{\"token\":\"c3035c6ff38b5b6dce3e02a6317a0649\"}］做为请求参数",
+          "接口文档缺少［r］做为请求参数"
+     ],
      "interfaceUrl": "/groups/statistics/selections.json",
      "interfaceName": "/groups/statistics/selections.json",
-     "lazyLoad": "no"
+     "lazyLoad": "no",
+     "methodError": "请求类型异常请确认"
 }

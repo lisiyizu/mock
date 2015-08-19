@@ -1,0 +1,170 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "city",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1439973177000",
+               "ruleVerify": "rule_1439973177000"
+          },
+          {
+               "name": "time_type",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1439973177000",
+               "ruleVerify": "rule_1439973177000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "status",
+               "rule": "0",
+               "array": [],
+               "nameVerify": "name_1439973187000",
+               "ruleVerify": "rule_1439973187000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "success",
+               "array": [],
+               "nameVerify": "name_1439973187000",
+               "ruleVerify": "rule_1439973187000"
+          },
+          {
+               "id": "03",
+               "kind": "object",
+               "name": "list",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439973187000",
+               "ruleVerify": "rule_1439973187000"
+          },
+          {
+               "id": "0301",
+               "kind": "array(object)",
+               "name": "statistics",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439973220000",
+               "ruleVerify": "rule_1439973220000"
+          },
+          {
+               "id": "030101",
+               "kind": "string",
+               "name": "leader_name",
+               "rule": "@word",
+               "array": [
+                    "0301"
+               ],
+               "nameVerify": "name_1439973229000",
+               "ruleVerify": "rule_1439973229000"
+          },
+          {
+               "id": "030103",
+               "kind": "array(object)",
+               "name": "list|3",
+               "rule": "--",
+               "array": [
+                    "0301"
+               ],
+               "nameVerify": "name_1439973304000",
+               "ruleVerify": "rule_1439973304000"
+          },
+          {
+               "id": "03010301",
+               "kind": "string",
+               "name": "bd_name",
+               "rule": "@word",
+               "array": [
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974427000",
+               "ruleVerify": "rule_1439974427000"
+          },
+          {
+               "id": "03010302",
+               "kind": "mock",
+               "name": "order_number|1-100",
+               "rule": "1",
+               "array": [
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974428000",
+               "ruleVerify": "rule_1439974428000"
+          },
+          {
+               "id": "03010303",
+               "kind": "mock",
+               "name": "first_order_number|1-50",
+               "rule": "1",
+               "array": [
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974430000",
+               "ruleVerify": "rule_1439974430000"
+          },
+          {
+               "id": "03010304",
+               "kind": "mock",
+               "name": "order_amount|1-100",
+               "rule": "1",
+               "array": [
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974493000",
+               "ruleVerify": "rule_1439974493000"
+          },
+          {
+               "id": "03010305",
+               "kind": "array(object)",
+               "name": "list|8",
+               "rule": "--",
+               "array": [
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974520000",
+               "ruleVerify": "rule_1439974520000"
+          },
+          {
+               "id": "0301030501",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "03010305",
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974528000",
+               "ruleVerify": "rule_1439974528000"
+          },
+          {
+               "id": "0301030502",
+               "kind": "mock",
+               "name": "value|1-10000",
+               "rule": "1",
+               "array": [
+                    "03010305",
+                    "030103",
+                    "0301"
+               ],
+               "nameVerify": "name_1439974529000",
+               "ruleVerify": "rule_1439974529000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/groups/statistics.json",
+     "interfaceName": "/groups/statistics.json",
+     "lazyLoad": "no"
+}
