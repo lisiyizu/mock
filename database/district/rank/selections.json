@@ -1,0 +1,217 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "status",
+               "rule": "0",
+               "array": [],
+               "nameVerify": "name_1439967804000",
+               "ruleVerify": "rule_1439967804000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "success",
+               "array": [],
+               "nameVerify": "name_1439967804000",
+               "ruleVerify": "rule_1439967804000"
+          },
+          {
+               "id": "03",
+               "kind": "object",
+               "name": "list",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439967804000",
+               "ruleVerify": "rule_1439967804000"
+          },
+          {
+               "id": "0301",
+               "kind": "array(object)",
+               "name": "rank_way",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439967833000",
+               "ruleVerify": "rule_1439967833000"
+          },
+          {
+               "id": "030101",
+               "kind": "string",
+               "name": "name",
+               "rule": "排名方式",
+               "array": [
+                    "0301"
+               ],
+               "nameVerify": "name_1439967869000",
+               "ruleVerify": "rule_1439967869000"
+          },
+          {
+               "id": "030102",
+               "kind": "array(object)",
+               "name": "list|3",
+               "rule": "--",
+               "array": [
+                    "0301"
+               ],
+               "nameVerify": "name_1439967988000",
+               "ruleVerify": "rule_1439967988000"
+          },
+          {
+               "id": "03010201",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968001000",
+               "ruleVerify": "rule_1439968001000"
+          },
+          {
+               "id": "03010202",
+               "kind": "mock",
+               "name": "value|+1",
+               "rule": "1",
+               "array": [
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968001000",
+               "ruleVerify": "rule_1439968001000"
+          },
+          {
+               "id": "03010203",
+               "kind": "object",
+               "name": "children",
+               "rule": "--",
+               "array": [
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968014000",
+               "ruleVerify": "rule_1439968014000"
+          },
+          {
+               "id": "0301020301",
+               "kind": "string",
+               "name": "name",
+               "rule": "品类",
+               "array": [
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968688000",
+               "ruleVerify": "rule_1439968688000"
+          },
+          {
+               "id": "0301020302",
+               "kind": "array(object)",
+               "name": "list",
+               "rule": "--",
+               "array": [
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968689000",
+               "ruleVerify": "rule_1439968689000"
+          },
+          {
+               "id": "030102030201",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "0301020302",
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968698000",
+               "ruleVerify": "rule_1439968698000"
+          },
+          {
+               "id": "030102030202",
+               "kind": "mock",
+               "name": "value|+1",
+               "rule": "1",
+               "array": [
+                    "0301020302",
+                    "030102",
+                    "0301"
+               ],
+               "nameVerify": "name_1439968699000",
+               "ruleVerify": "rule_1439968699000"
+          },
+          {
+               "id": "0302",
+               "kind": "object",
+               "name": "time_time",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439967874000",
+               "ruleVerify": "rule_1439967874000"
+          },
+          {
+               "id": "030201",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [],
+               "nameVerify": "name_1439969700000",
+               "ruleVerify": "rule_1439969700000"
+          },
+          {
+               "id": "030202",
+               "kind": "string",
+               "name": "param",
+               "rule": "timer",
+               "array": [],
+               "nameVerify": "name_1439969701000",
+               "ruleVerify": "rule_1439969701000"
+          },
+          {
+               "id": "030203",
+               "kind": "array(object)",
+               "name": "list|2",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439969702000",
+               "ruleVerify": "rule_1439969702000"
+          },
+          {
+               "id": "03020301",
+               "kind": "mock",
+               "name": "name|1",
+               "rule": "['天','周','月']",
+               "array": [
+                    "030203"
+               ],
+               "nameVerify": "name_1439969715000",
+               "ruleVerify": "rule_1439969715000"
+          },
+          {
+               "id": "03020302",
+               "kind": "mock",
+               "name": "value|1",
+               "rule": "['day','week','month','option']",
+               "array": [
+                    "030203"
+               ],
+               "nameVerify": "name_1439969716000",
+               "ruleVerify": "rule_1439969716000"
+          }
+     ],
+     "reqError": [],
+     "docError": [
+          "接口文档缺少［{\"token\":\"c3035c6ff38b5b6dce3e02a6317a0649\"}］做为请求参数",
+          "接口文档缺少［r］做为请求参数"
+     ],
+     "interfaceUrl": "/district/rank/selections.json",
+     "interfaceName": "/district/rank/selections.json",
+     "lazyLoad": "no",
+     "methodError": "请求类型异常请确认"
+}

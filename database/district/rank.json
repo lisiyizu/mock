@@ -1,0 +1,93 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "rank_way",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1439970729000",
+               "ruleVerify": "rule_1439970729000"
+          },
+          {
+               "name": "time_type",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1439970732000",
+               "ruleVerify": "rule_1439970732000"
+          },
+          {
+               "name": "kind",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1439970746000",
+               "ruleVerify": "rule_1439970746000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "status",
+               "rule": "0",
+               "array": [],
+               "nameVerify": "name_1439970750000",
+               "ruleVerify": "rule_1439970750000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "success",
+               "array": [],
+               "nameVerify": "name_1439970751000",
+               "ruleVerify": "rule_1439970751000"
+          },
+          {
+               "id": "03",
+               "kind": "array(object)",
+               "name": "list|10",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1439970752000",
+               "ruleVerify": "rule_1439970752000"
+          },
+          {
+               "id": "0301",
+               "kind": "mock",
+               "name": "rank|+1",
+               "rule": "1",
+               "array": [
+                    "03"
+               ],
+               "nameVerify": "name_1439970792000",
+               "ruleVerify": "rule_1439970792000"
+          },
+          {
+               "id": "0302",
+               "kind": "mock",
+               "name": "value|100-10000",
+               "rule": "1",
+               "array": [
+                    "03"
+               ],
+               "nameVerify": "name_1439970792000",
+               "ruleVerify": "rule_1439970792000"
+          },
+          {
+               "id": "0303",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "03"
+               ],
+               "nameVerify": "name_1439970834000",
+               "ruleVerify": "rule_1439970834000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/district/rank.json",
+     "interfaceName": "/district/rank.json",
+     "lazyLoad": "no"
+}
